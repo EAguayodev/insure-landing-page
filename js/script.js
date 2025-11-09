@@ -1,4 +1,5 @@
 const hamburger = document.getElementById('hamburger');
+const closeIcon = document.querySelector('.close');
 const menu = document.getElementById('menu');
 
 hamburger.addEventListener('click', () => {
