@@ -97,6 +97,11 @@ h2::before {
     color: var(--Dark-Violet);
 }
 
+.btn-reverse:hover {
+    background-color: var(--Dark-Violet);
+    color: #fff;
+}
+
 .container {
     padding: 0 20px;
     margin: 0 auto;
@@ -141,12 +146,18 @@ nav .hamburger {
 
 nav li {
     margin-left: 30px;
+    font-weight: 600;
 }
 
 nav li a {
     color: var(--Dark-Grayish-Violet);
     text-transform: uppercase;
     text-decoration: none;
+}
+
+nav li a:hover {
+    cursor: pointer;
+    color: var(--Dark-Violet);
 }
 
 /*header styling */
@@ -158,8 +169,6 @@ header {
     margin-bottom: 50px;
     height: 600px;
 }
-
-
 
 header * {
     z-index: 2;
@@ -241,6 +250,12 @@ footer li a {
     list-style: none;
     text-transform: uppercase;
     text-decoration: none;
+    font-weight: 600;
+}
+
+footer li a:hover {
+    color: var(--Dark-Violet);
+    text-decoration: underline;
 }
 
 footer ul.flex li:not(:first-child) {
@@ -263,8 +278,12 @@ footer ul {
 
 }
 
-@media (max-width: 768px) {
+svg:hover {
+    cursor: pointer;
+    fill: var(--Dark-Violet);
+}   
 
+@media (max-width: 768px) {
     body {
         text-align: center;
     }
