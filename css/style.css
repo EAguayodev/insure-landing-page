@@ -104,9 +104,13 @@ h2::before {
 
 .container {
     padding: 0 20px;
-    margin: 0 auto;
+    margin: 0px auto;
     width: 1200px;
     max-width: 100%;
+}
+
+.different-section {
+    margin-top: 100px;
 }
 
 .align-start {
@@ -117,11 +121,9 @@ h2::before {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 20px;
 }
 
-.flex>div {
-    flex: 1;
-}
 
 /* nav styling */
 nav {
@@ -217,18 +219,18 @@ header::before {
     background-repeat: no-repeat;
     background-position: top right;
     background-size: 50% 100%;
-    padding: 70px;
+    padding: 0 70px;
     position: relative;
     margin: 100px auto;
-    height: 450px;
+    height: 250px;
 }
 
 
 .bg-violet h2 {
     color: #fff;
-    font-size: 3em;
+    font-size: 3.5rem;
     padding: 0;
-    width: 50%;
+    width: 33rem;
 }
 
 /* footer styling */
@@ -289,9 +291,10 @@ svg:hover {
     }
 
     header {
-        padding-top: 0;
-        margin-top: -20px;
+        /* padding-top: 0;
+        margin-top: -20px; */
         background-image: url('../images/bg-pattern-mobile-nav.svg');
+        height: 900px;
     }
 
     header::before,
@@ -405,7 +408,7 @@ svg:hover {
     }
 
     .flex {
-        flex-direction: column;
+        flex-direction: column-reverse;
     }
 
     .intro {
