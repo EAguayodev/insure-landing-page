@@ -1,7 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Karla:wght@400;700&display=swap');
-
-
 * {
     box-sizing: border-box;
 }
@@ -31,7 +27,7 @@ h3 {
 }
 
 h1 {
-    font-size: 3em;
+    font-size: 3.5rem;
     letter-spacing: 7px;
     line-height: 1;
     position: relative;
@@ -83,8 +79,12 @@ h2::before {
     border: 2px solid #fff;
     color: #fff;
     cursor: pointer;
-    padding: 10px 15px;
+    padding: 10px 30px;
     text-transform: uppercase;
+}
+
+.btn-view-secondary {
+    padding: 10px 30px;
 }
 
 .btn:hover {
@@ -109,6 +109,10 @@ h2::before {
     max-width: 100%;
 }
 
+.insure-section p{
+    width: 540px;
+}
+
 .different-section {
     margin-top: 100px;
 }
@@ -118,6 +122,20 @@ h2::before {
 }
 
 .flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.violet-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.different-row {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -206,9 +224,6 @@ header::before {
     margin-bottom: -250px;
 }
 
-/*section styling */
-
-
 .tiles {
     margin-top: 50px;
 }
@@ -265,6 +280,14 @@ footer ul.flex li:not(:first-child) {
     margin-right: 45px;
 }
 
+.foot-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
 .border-bottom {
     border-bottom: 1px solid var(--Dark-Grayish-Violet);
     margin-bottom: 30px;
@@ -313,6 +336,16 @@ svg:hover {
         height: 100%;
         width: 100%;
         z-index: 0;
+    }
+
+    h1{
+        font-size: 3rem;
+        width: 20.438rem;
+        padding-top: 0;
+    }
+
+    h1::before {
+        display: none;
     }
 
     nav .flex {
@@ -374,6 +407,14 @@ svg:hover {
         text-align: left;
     }
 
+    .insure-section{
+        height: 500px;
+    }
+
+    .insure-section p {
+        width: 20.438rem;
+    }
+
     .line-top::before {
         left: 50%;
         transform: translateX(-50%);
@@ -385,12 +426,24 @@ svg:hover {
 
     .bg-violet {
         background-image: url('../images/bg-pattern-how-we-work-mobile.svg');
+        height: 344px;
+    }
 
+    .violet-box {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .tiles p{
+        width: 20.438rem;
     }
 
     .bg-violet h2 {
+        font-size: 2.5rem;
         margin-bottom: 20px;
-        width: 100%;
+        width: 17.438rem;
     }
 
     footer {
@@ -405,6 +458,15 @@ svg:hover {
 
     footer .flex div {
         width: 100%;
+    }
+
+    .different-row {
+        flex-direction: column;
+    }
+
+    .foot-flex {
+        flex-direction: column;
+        gap: 20px;
     }
 
     .flex {
