@@ -27,16 +27,17 @@ h3 {
 }
 
 h1 {
-    font-size: 3.5rem;
+    font-size: 4.5rem;
     letter-spacing: 7px;
     line-height: 1;
     position: relative;
     margin: 0;
-    padding-top: 50px;
+    padding-top: 80px;
+    width: 630px;
 }
 
 h3 {
-    font-size: 2em;
+    font-size: 1.75rem;
 }
 
 p {
@@ -58,7 +59,7 @@ h1::before {
     content: '';
     background-color: #fff;
     position: absolute;
-    top: 0;
+    top: 3rem;
     left: 0;
     height: 2px;
     width: 100px;
@@ -70,7 +71,7 @@ h2::before {
     position: absolute;
     top: 0;
     left: 0;
-    height: 1px;
+    height: 2px;
     width: 150px;
 }
 
@@ -314,15 +315,25 @@ svg:hover {
     }
 
     header {
-        /* padding-top: 0;
-        margin-top: -20px; */
-        background-image: url('../images/bg-pattern-mobile-nav.svg');
-        height: 900px;
+        padding-top: 0;
+        height: 950px;
     }
 
-    header::before,
+    /* header::before,
     header::after {
         display: none;
+    } */
+
+    header::after {
+        content: '';
+        background-image: url('../images/bg-pattern-intro-right-mobile.svg');
+        background-repeat: no-repeat;
+        background-position: top right;
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
     }
 
     header::before {
@@ -341,7 +352,6 @@ svg:hover {
     h1{
         font-size: 3rem;
         width: 20.438rem;
-        padding-top: 0;
     }
 
     h1::before {
@@ -474,8 +484,7 @@ svg:hover {
     }
 
     .intro {
-        width: 395px;
+        width: 375px;
         margin-bottom: -10px;
-        max-width: calc(100%) + 40px;
     }
 }

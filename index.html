@@ -77,8 +77,11 @@
           </button>
         </div>
         <div>
-          <img class="intro" src="images/image-intro-desktop.jpg" alt="intro">
-          <!-- <img src="images/image-intro-mobile.jpg" alt=""> -->
+          <picture>
+            <source media="(min-width: 900px)" srcset="images/image-intro-desktop.jpg">
+            <source media="(min-width: 600px)" srcset="images/image-intro-mobile.jpg">
+            <img class="intro" src="images/image-intro-desktop.jpg" alt="intro">
+          </picture>
         </div>
       </div>
     </div>
