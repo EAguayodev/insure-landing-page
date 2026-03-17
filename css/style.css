@@ -36,6 +36,10 @@ h1 {
     width: 630px;
 }
 
+h2{
+    font-size: 4.5rem;
+}
+
 h3 {
     font-size: 1.75rem;
 }
@@ -45,7 +49,7 @@ p {
     opacity: 0.8;
 }
 
-.line-top::before {
+/* .line-top::before {
     content: '';
     background-color: var(--Dark-Violet);
     position: absolute;
@@ -53,7 +57,7 @@ p {
     left: 0;
     height: 1px;
     width: 150px;
-}
+} */
 
 h1::before {
     content: '';
@@ -352,6 +356,10 @@ svg:hover {
     h1{
         font-size: 3rem;
         width: 20.438rem;
+    }
+
+    h2{
+        font-size: 3rem;
     }
 
     h1::before {
